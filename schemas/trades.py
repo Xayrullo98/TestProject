@@ -8,7 +8,7 @@ from schemas.sold_products import Sold_Product
 class TradeBase(BaseModel):
     customer_id: int
     products: List[Sold_Product]
-    date: datetime
+    amount:float
 
 
 class TradeCreate(TradeBase):
